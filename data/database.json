@@ -1,0 +1,504 @@
+{
+  "settings": {
+    "companyName": "Saylani IT Park - HCM Lite",
+    "officeStart": "09:00",
+    "graceMinutes": 15,
+    "halfDayHours": 5,
+    "weekendDays": [
+      0,
+      6
+    ],
+    "officeLat": 24.8607,
+    "officeLng": 67.0011,
+    "officeRadiusMeters": 250,
+    "latePenaltyEnabled": true,
+    "isConfigured": true
+  },
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Saylani Admin",
+      "email": "admin@saylani.com",
+      "passwordHash": "$2b$10$NzRXWonK1qYzP8JmlKWGHOzBcYRsUOTatdKS/B7vAfBcczuULVg8a",
+      "role": "admin",
+      "mustChangePassword": false,
+      "isActive": true,
+      "createdAt": "2026-10-24T20:07:40.027Z"
+    },
+    {
+      "id": "usr-hr-1",
+      "name": "Ayesha Khan (HR Lead)",
+      "email": "ayesha.hr@saylani.com",
+      "passwordHash": "$2b$10$bCBv0lulaVwfHbLaAlRinOsPc3H6dznFf/B3vW5AYEm24bdLmYW6O",
+      "role": "hr",
+      "mustChangePassword": false,
+      "isActive": true,
+      "createdAt": "2026-10-24T20:07:40.126Z"
+    },
+    {
+      "id": "usr-emp-1",
+      "name": "Muhammad Bilal",
+      "email": "bilal@saylani.com",
+      "passwordHash": "$2b$10$1UfqLmfOvQmcoQ7SsQhTT.XA51GBiIXbSgVobukft9BqSHnuOBFRq",
+      "role": "employee",
+      "employeeId": "emp-1",
+      "mustChangePassword": false,
+      "isActive": true,
+      "createdAt": "2026-10-24T20:07:40.225Z"
+    },
+    {
+      "id": "usr-emp-2",
+      "name": "Zainab Fatima",
+      "email": "zainab@saylani.com",
+      "passwordHash": "$2b$10$gchBfq.VqPDwo5OCDer1Z.DZlyORJzqUw3IVDWdS/DXgNVF27FTS6",
+      "role": "employee",
+      "employeeId": "emp-2",
+      "mustChangePassword": true,
+      "isActive": true,
+      "createdAt": "2026-10-24T20:07:40.323Z"
+    },
+    {
+      "id": "usr-emp-3",
+      "name": "Hamza Tariq",
+      "email": "hamza@saylani.com",
+      "passwordHash": "$2b$10$9OinzOgLWMDXbnGrJlxJWOpmJtXRaBwyUAFUB14PkH84ASlGdGaDi",
+      "role": "employee",
+      "employeeId": "emp-3",
+      "mustChangePassword": true,
+      "isActive": true,
+      "createdAt": "2026-10-24T20:07:40.455Z"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept-1",
+      "name": "Engineering",
+      "code": "ENG"
+    },
+    {
+      "id": "dept-2",
+      "name": "Human Resources",
+      "code": "HR"
+    },
+    {
+      "id": "dept-3",
+      "name": "Product & Design",
+      "code": "PRD"
+    },
+    {
+      "id": "dept-4",
+      "name": "Sales & Marketing",
+      "code": "MKT"
+    }
+  ],
+  "designations": [
+    {
+      "id": "desig-1",
+      "title": "Senior Software Engineer",
+      "departmentId": "dept-1"
+    },
+    {
+      "id": "desig-2",
+      "title": "Full Stack Developer",
+      "departmentId": "dept-1"
+    },
+    {
+      "id": "desig-3",
+      "title": "HR Operations Manager",
+      "departmentId": "dept-2"
+    },
+    {
+      "id": "desig-4",
+      "title": "HR Generalist",
+      "departmentId": "dept-2"
+    },
+    {
+      "id": "desig-5",
+      "title": "UI/UX Designer",
+      "departmentId": "dept-3"
+    }
+  ],
+  "leaveTypes": [
+    {
+      "id": "lt-annual",
+      "name": "Annual Leave",
+      "code": "annual",
+      "yearlyQuota": 14
+    },
+    {
+      "id": "lt-sick",
+      "name": "Sick Leave",
+      "code": "sick",
+      "yearlyQuota": 8
+    },
+    {
+      "id": "lt-casual",
+      "name": "Casual Leave",
+      "code": "casual",
+      "yearlyQuota": 10
+    },
+    {
+      "id": "lt-unpaid",
+      "name": "Unpaid Leave",
+      "code": "unpaid",
+      "yearlyQuota": 9999
+    }
+  ],
+  "holidays": [
+    {
+      "id": "hol-1",
+      "name": "Pakistan Day",
+      "date": "2026-03-23"
+    },
+    {
+      "id": "hol-2",
+      "name": "Labor Day",
+      "date": "2026-05-01"
+    },
+    {
+      "id": "hol-3",
+      "name": "Independence Day",
+      "date": "2026-08-14"
+    },
+    {
+      "id": "hol-4",
+      "name": "Iqbal Day",
+      "date": "2026-11-09"
+    },
+    {
+      "id": "hol-5",
+      "name": "Quaid-e-Azam Day",
+      "date": "2026-12-25"
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp-1",
+      "employeeCode": "EMP-001",
+      "name": "Muhammad Bilal",
+      "email": "bilal@saylani.com",
+      "phone": "+92 300 1234560",
+      "address": "Block 1, Gulshan-e-Iqbal, Karachi",
+      "departmentId": "dept-1",
+      "designationId": "desig-1",
+      "joinDate": "2026-01-15",
+      "gender": "male",
+      "status": "active",
+      "basicSalary": 120000,
+      "allowanceHra": 48000,
+      "allowanceMedical": 12000,
+      "grossSalary": 180000,
+      "userId": "usr-emp-1"
+    },
+    {
+      "id": "emp-2",
+      "employeeCode": "EMP-002",
+      "name": "Zainab Fatima",
+      "email": "zainab@saylani.com",
+      "phone": "+92 300 1234561",
+      "address": "Block 2, Gulshan-e-Iqbal, Karachi",
+      "departmentId": "dept-3",
+      "designationId": "desig-5",
+      "joinDate": "2026-01-15",
+      "gender": "female",
+      "status": "active",
+      "basicSalary": 95000,
+      "allowanceHra": 38000,
+      "allowanceMedical": 9500,
+      "grossSalary": 142500,
+      "userId": "usr-emp-2"
+    },
+    {
+      "id": "emp-3",
+      "employeeCode": "EMP-003",
+      "name": "Hamza Tariq",
+      "email": "hamza@saylani.com",
+      "phone": "+92 300 1234562",
+      "address": "Block 3, Gulshan-e-Iqbal, Karachi",
+      "departmentId": "dept-1",
+      "designationId": "desig-2",
+      "joinDate": "2026-01-15",
+      "gender": "male",
+      "status": "active",
+      "basicSalary": 80000,
+      "allowanceHra": 32000,
+      "allowanceMedical": 8000,
+      "grossSalary": 120000,
+      "userId": "usr-emp-3"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att-1",
+      "employeeId": "emp-1",
+      "date": "2026-10-24",
+      "checkInTime": "2026-10-24T08:55:00Z",
+      "source": "web",
+      "status": "present"
+    },
+    {
+      "id": "att-2",
+      "employeeId": "emp-3",
+      "date": "2026-10-24",
+      "checkInTime": "2026-10-24T09:22:00Z",
+      "source": "camera",
+      "status": "late",
+      "distanceMeters": 45,
+      "faceDetected": true
+    }
+  ],
+  "attendanceCorrections": [],
+  "leaveRequests": [
+    {
+      "id": "leave-1",
+      "employeeId": "emp-2",
+      "leaveTypeId": "lt-casual",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "workingDays": 1,
+      "reason": "Sister's wedding ceremony",
+      "status": "approved",
+      "hrComment": "Approved. Enjoy the wedding!",
+      "reviewedBy": "Ayesha Khan (HR Lead)",
+      "reviewedAt": "2026-10-24T20:07:40.455Z",
+      "createdAt": "2026-10-24T20:07:40.455Z"
+    }
+  ],
+  "payrollRuns": [],
+  "payslips": [],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "title": "Welcome to HCM Lite",
+      "content": "Saylani Hackathon HCM Lite platform is ready for judging and employee operations.",
+      "priority": "normal",
+      "postedBy": "system",
+      "postedByName": "Admin",
+      "createdAt": "2026-10-24T20:07:39.906Z"
+    }
+  ],
+  "notifications": [],
+  "auditLogs": [
+    {
+      "id": "audit-1792872882318-46b0e335",
+      "actorId": "usr-emp-1",
+      "actorEmail": "bilal@saylani.com",
+      "actorRole": "employee",
+      "action": "login",
+      "entity": "auth",
+      "entityId": "usr-emp-1",
+      "beforeData": null,
+      "afterData": null,
+      "timestamp": "2026-10-24T20:14:42.318Z"
+    },
+    {
+      "id": "audit-1792872870009-7774ed92",
+      "actorId": "usr-emp-1",
+      "actorEmail": "bilal@saylani.com",
+      "actorRole": "employee",
+      "action": "login",
+      "entity": "auth",
+      "entityId": "usr-emp-1",
+      "beforeData": null,
+      "afterData": null,
+      "timestamp": "2026-10-24T20:14:30.010Z"
+    },
+    {
+      "id": "audit-1792872803048-821ec836",
+      "actorId": "usr-emp-1",
+      "actorEmail": "bilal@saylani.com",
+      "actorRole": "employee",
+      "action": "login",
+      "entity": "auth",
+      "entityId": "usr-emp-1",
+      "beforeData": null,
+      "afterData": null,
+      "timestamp": "2026-10-24T20:13:23.049Z"
+    },
+    {
+      "id": "audit-1792872665837-c3fb77be",
+      "actorId": "usr-hr-1",
+      "actorEmail": "ayesha.hr@saylani.com",
+      "actorRole": "hr",
+      "action": "login",
+      "entity": "auth",
+      "entityId": "usr-hr-1",
+      "beforeData": null,
+      "afterData": null,
+      "timestamp": "2026-10-24T20:11:05.837Z"
+    },
+    {
+      "id": "audit-1792872653657-1abd107f",
+      "actorId": "usr-emp-1",
+      "actorEmail": "bilal@saylani.com",
+      "actorRole": "employee",
+      "action": "login",
+      "entity": "auth",
+      "entityId": "usr-emp-1",
+      "beforeData": null,
+      "afterData": null,
+      "timestamp": "2026-10-24T20:10:53.657Z"
+    },
+    {
+      "id": "audit-1792872469659-6b973b89",
+      "actorId": "usr-emp-1",
+      "actorEmail": "bilal@saylani.com",
+      "actorRole": "employee",
+      "action": "login",
+      "entity": "auth",
+      "entityId": "usr-emp-1",
+      "beforeData": null,
+      "afterData": null,
+      "timestamp": "2026-10-24T20:07:49.659Z"
+    },
+    {
+      "id": "audit-1792872460456-74d545a8",
+      "actorId": "usr-admin-1",
+      "actorEmail": "admin@saylani.com",
+      "actorRole": "admin",
+      "action": "seed",
+      "entity": "system",
+      "beforeData": null,
+      "afterData": {
+        "note": "Hackathon demo dataset loaded."
+      },
+      "timestamp": "2026-10-24T20:07:40.456Z"
+    }
+  ],
+  "aiLogs": [
+    {
+      "id": "ai-1792872882334-964478",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "What is colleague’s salary?",
+      "toolUsed": "policy_guardrail",
+      "response": "I apologize, but company privacy and data security policies strictly prohibit viewing or sharing the salary details of other employees. You can only view your own salary and payslips in your Employee Portal.",
+      "timestamp": "2026-10-24T20:14:42.334Z"
+    },
+    {
+      "id": "ai-1792872873544-f6bfd9",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "How many sick leaves do I have left this year?",
+      "toolUsed": "get_my_leave_balance",
+      "response": "You currently have **8** sick leave day(s) left this year out of your **8**-day quota (0 days used).",
+      "timestamp": "2026-10-24T20:14:33.545Z"
+    },
+    {
+      "id": "ai-1792872823139-217df0",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "Meri kitni sick leave bachi hain?",
+      "toolUsed": "get_my_leave_balance",
+      "response": "You currently have **8** sick leave day(s) left this year out of your **8**-day quota (0 days used).",
+      "timestamp": "2026-10-24T20:13:43.140Z"
+    },
+    {
+      "id": "ai-1792872815127-516cba",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "I need next Monday and Tuesday off for my sister’s wedding",
+      "toolUsed": "smart_leave",
+      "response": "Here is your pre-filled leave application based on your request:\n\n• **Leave Type:** Casual Leave (Casual)\n• **Start Date:** 2026-10-26\n• **End Date:** 2026-10-27\n• **Reason:** \"I need next Monday and Tuesday off for my sister’s wedding\"\n\nYou can confirm and submit this request directly through the Leave Portal or click below to submit!",
+      "timestamp": "2026-10-24T20:13:35.127Z"
+    },
+    {
+      "id": "ai-1792872811112-05da94",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "What is colleague’s salary?",
+      "toolUsed": "policy_guardrail",
+      "response": "I apologize, but company privacy and data security policies strictly prohibit viewing or sharing the salary details of other employees. You can only view your own salary and payslips in your Employee Portal.",
+      "timestamp": "2026-10-24T20:13:31.112Z"
+    },
+    {
+      "id": "ai-1792872811094-3ac907",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "How many sick leaves do I have left this year?",
+      "toolUsed": "get_my_leave_balance",
+      "response": "You currently have **8** sick leave day(s) left this year out of your **8**-day quota (0 days used).",
+      "timestamp": "2026-10-24T20:13:31.095Z"
+    },
+    {
+      "id": "ai-1792872689869-a92315",
+      "userId": "usr-hr-1",
+      "userRole": "hr",
+      "query": "What is this month’s attendance rate?",
+      "toolUsed": "get_attendance_summary",
+      "response": "This month’s overall attendance rate is **100%** (matching the HR Operations Dashboard).\n\nToday's Activity:\n• Present: 1\n• Late: 1\n• Half Day: 0\n• On Leave: 1",
+      "timestamp": "2026-10-24T20:11:29.869Z"
+    },
+    {
+      "id": "ai-1792872681857-735149",
+      "userId": "usr-hr-1",
+      "userRole": "hr",
+      "query": "Who came late most often this month?",
+      "toolUsed": "get_late_comers",
+      "response": "The employee who came late most often this month (2026-10) is **Hamza Tariq** (Engineering) with **1** late check-in(s).\n\nTop late-comers breakdown:\n1. **Hamza Tariq** (Engineering): 1 late check-in(s)\n\n*Note: Grace period is 15 minutes past 09:00 AM. 3 late check-ins trigger a 0.5-day salary deduction.*",
+      "timestamp": "2026-10-24T20:11:21.857Z"
+    },
+    {
+      "id": "ai-1792872673848-0dcb07",
+      "userId": "usr-hr-1",
+      "userRole": "hr",
+      "query": "How many active employees are in Engineering?",
+      "toolUsed": "get_headcount",
+      "response": "Currently, there are **2** active employee(s) in the **Engineering** department (out of 3 total active employees company-wide).",
+      "timestamp": "2026-10-24T20:11:13.848Z"
+    },
+    {
+      "id": "ai-1792872665721-eddfc3",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "I need next Monday and Tuesday off for my sister’s wedding",
+      "toolUsed": "smart_leave",
+      "response": "Here is your pre-filled leave application based on your request:\n\n• **Leave Type:** Casual Leave (Casual)\n• **Start Date:** 2026-10-26\n• **End Date:** 2026-10-27\n• **Reason:** \"I need next Monday and Tuesday off for my sister’s wedding\"\n\nYou can confirm and submit this request directly through the Leave Portal or click below to submit!",
+      "timestamp": "2026-10-24T20:11:05.721Z"
+    },
+    {
+      "id": "ai-1792872661703-3df7a1",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "What is colleague’s salary?",
+      "toolUsed": "policy_guardrail",
+      "response": "I apologize, but company privacy and data security policies strictly prohibit viewing or sharing the salary details of other employees. You can only view your own salary and payslips in your Employee Portal.",
+      "timestamp": "2026-10-24T20:11:01.703Z"
+    },
+    {
+      "id": "ai-1792872661694-a7f881",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "How many sick leaves do I have left this year?",
+      "toolUsed": "get_my_leave_balance",
+      "response": "You currently have **8** sick leave day(s) left this year out of your **8**-day quota (0 days used).",
+      "timestamp": "2026-10-24T20:11:01.694Z"
+    },
+    {
+      "id": "ai-1792872564787-f98764",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "I need next Monday and Tuesday off for my sister’s wedding",
+      "response": "Congratulations on your sister's wedding!\n\nTo take next Monday and Tuesday off (2 working days), you will need to submit a formal leave request through the HCM Lite portal:\n\n1. **Leave Type:** You can apply for **Casual Leave** (or **Annual Leave**).\n2. **Duration:** Select the specific dates for Monday and Tuesday (2 days).\n3. **Reason:** Mention \"Sister's wedding\".\n\n### Important Notes:\n* **Leave Quota:** Please ensure you have sufficient balance available (Casual: 10 days/year, Annual: 14 days/year). You can check your current balance in the portal or ask me directly (\"*Check my leave balance*\").\n* **Approval:** Once submitted, your request will be routed to HR for review and approval.\n\nLet me know if you would like me to check your remaining leave balances!",
+      "timestamp": "2026-10-24T20:09:24.788Z"
+    },
+    {
+      "id": "ai-1792872520313-a70e9e",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "What is colleague’s salary?",
+      "toolUsed": "refuse_colleague_salary",
+      "response": "I apologize, but company privacy and data security policies strictly prohibit viewing or sharing the salary details of other employees. You can only view your own salary and payslips in your Employee Portal.",
+      "timestamp": "2026-10-24T20:08:40.313Z"
+    },
+    {
+      "id": "ai-1792872520304-408b75",
+      "userId": "usr-emp-1",
+      "userRole": "employee",
+      "query": "How many sick leaves do I have left this year?",
+      "toolUsed": "get_my_leave_balance",
+      "response": "Hello Muhammad Bilal,\n\nYou currently have **8 days** of Sick Leave remaining out of your 8-day annual quota (0 days used this year). \n\nPlease let me know if you need information about your other leave balances or anything else!",
+      "timestamp": "2026-10-24T20:08:40.304Z"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "HCM Lite - AI-Assisted Human Capital Management",
+  "description": "Full-stack Human Capital Management system with role-based access for Admin, HR, and Employee, attendance with geofence, leave workflow, payroll calculation, payslips, and tool-calling AI assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
